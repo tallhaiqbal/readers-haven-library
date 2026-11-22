@@ -1,4 +1,4 @@
-/* ===== Readers' Haven - shared stylesheet ===== */
+﻿/* ===== Readers' Haven - shared stylesheet ===== */
 :root {
   --primary: #2c3e50;
   --accent: #c0392b;
@@ -117,4 +117,37 @@ body {
   .nav a { margin-left: 0; margin-right: 1rem; }
   .grid-2, .grid-4 { grid-template-columns: 1fr; }
   .hero h2 { font-size: 1.6rem; }
+}
+
+
+/* ===== Collections Page Styles ===== */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.book-list {
+  margin-top: 0.75rem;
+  padding-left: 1.2rem;
+}
+
+.book-list li {
+  margin-bottom: 0.35rem;
+}
+
+@media (max-width: 768px) {
+  .collection-grid { grid-template-columns: 1fr; }
 }
