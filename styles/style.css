@@ -151,3 +151,26 @@ body {
 @media (max-width: 768px) {
   .collection-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ===== Digital Services Page Styles ===== */
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.service-item {
+  border-left: 4px solid var(--primary);
+}
+
+.service-item .meta {
+  margin-top: 0.6rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .service-item { padding: 1rem; }
+  .service-item h3 { font-size: 1.1rem; }
+}
