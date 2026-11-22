@@ -1,0 +1,10 @@
+# Keep the Docker build context small and clean
+node_modules
+dist
+.parcel-cache
+.git
+.gitignore
+Dockerfile
+.dockerignore
+README.md
+.env
