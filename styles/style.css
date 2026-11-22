@@ -47,3 +47,78 @@ body {
   padding: 1rem;
   margin-top: 3rem;
 }
+
+/* ===== Membership Page ===== */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.plan-card {
+  background: #fff;
+  border: 1px solid #e0d8cc;
+  border-top: 4px solid var(--primary);
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.plan-card h3 {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.price span {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.plan-card ul,
+.membership-rules ul {
+  padding-left: 1.2rem;
+}
+
+.plan-card li,
+.membership-rules li {
+  margin-bottom: 0.45rem;
+}
+
+.membership-rules {
+  background: #fff;
+  border: 1px solid #e0d8cc;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+}
+
+.membership-rules h3 {
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .nav a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+}
